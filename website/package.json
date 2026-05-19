@@ -1,0 +1,29 @@
+{
+  "name": "ai-doctor-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:server": "node --watch server/src/index.js",
+    "dev:client": "vite client --host 127.0.0.1",
+    "build": "vite build client",
+    "start": "node server/src/index.js",
+    "preview": "vite preview --host 127.0.0.1 client"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "concurrently": "^9.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "groq-sdk": "^0.33.0",
+    "lucide-react": "^0.468.0",
+    "marked": "^18.0.3",
+    "multer": "^2.0.2",
+    "pdf-parse": "^1.1.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "vite": "^7.1.7"
+  }
+}
