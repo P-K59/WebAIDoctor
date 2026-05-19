@@ -1,8 +1,8 @@
-import { specialties } from "../../server/src/config.js";
-import { createHealthAdvice, analyzeReport } from "../../server/src/healthService.js";
-import { detectCityFromIp, geocodeCity, getHospitals } from "../../server/src/locationService.js";
-import { getDoctors } from "../../server/src/doctorService.js";
-import { extractReportText } from "../../server/src/fileService.js";
+import { specialties } from "./config.js";
+import { createHealthAdvice, analyzeReport } from "./healthService.js";
+import { detectCityFromIp, geocodeCity, getHospitals } from "./locationService.js";
+import { getDoctors } from "./doctorService.js";
+import { extractReportText } from "./fileService.js";
 
 const jsonHeaders = {
   "Content-Type": "application/json",
